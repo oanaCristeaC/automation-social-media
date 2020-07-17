@@ -19,7 +19,7 @@ require('dotenv').config();
                               //        URL                  An array of permissions
     context.overridePermissions("https://www.facebook.com", ["geolocation", "notifications"]);
     await page.click('a[aria-label="More"] div[data-visualcompletion="ignore"]')
-    await page.waitFor(2000000);
+    await page.waitFor(2000);
     await page.goto('https://www.facebook.com/friends');
     await page.waitFor(1000);
 
